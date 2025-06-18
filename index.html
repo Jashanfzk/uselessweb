@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake Update Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>System Update Downloader</h2>
+    <p>Preparing to download updates...</p>
+
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+
+    <div id="status">Idle</div>
+
+    <button onclick="startFakeDownload()" id="startBtn">Start Update</button>
+    <button onclick="togglePause()" id="pauseBtn" disabled>Pause</button>
+  </div>
+
+  <audio id="completeSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
